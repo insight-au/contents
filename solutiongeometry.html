@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Solution to Exercises</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="geometry.html" >Introduction</a></li>
+<li><a href="trianglecquad.html" >Triangle and Quadrilateral</a></li>
+<li><a href="pythagoras.html">Pythagoras Theorem</a></li>
+<li><a href="othertheorems.html">Other Theorems</a></li>
+<li><a href="exercisegeometry.html">Exercises</a></li>
+<li><a href="solutiongeometry.html">Solutions</a></li>
+
+
+
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+
+<b><u>Solutions to the exercises in geometry :</u></b>
+<br/>
+<ol>
+<li>In a triangle ABC if AB=sqrt(10)-sqrt(5), AC=sqrt(6) and BC=sqrt(18)-1,
+find the altitude from A onto BC.
+<div id="tablebhas">
+<img src="exergeo.gif" alt="triangle" width="250" height="250">
+</div>
+<p>
+<ul>
+<li>Let P be the foot of the perpendicular from A onto BC.</li>
+<li>Let BP = x and PC = y.</li>
+<li>Then, we have by Pythagoras theorem,<br/>
+x<sup>2</sup> + p<sup>2</sup> = 15-10sqrt(2), and
+y2 + p<sup>2</sup> = 6.</li>
+<li>Therefore, y2 - x<sup>2</sup> = 10sqrt(2) - 9.<br/>
+(y + x)(y - x) = 10sqrt(2) - 9<br/>
+(sqrt(18) - 1)(y - x) = 10sqrt(2) - 9<br/>
+y - x = (10sqrt(2) - 9)/(3sqrt(2) - 1)<br/>
+y - x = (51 - 17sqrt(2)) / 17  ( after rationalisation of the denominator)<br/>
+y - x = 3 - sqrt(2).</li>
+<li>Now, y+x = 3sqrt(2)-1. Therefore
+y = 1 + sqrt(2).<br/>
+Therefore, p<sup>2</sup> = 3 - 2sqrt(2)<br/>
+p<sup>2</sup> = (sqrt(2)+1)2<br/>
+p = sqrt(2)+1.</li>
+</ul>
+</li>
+
+<li>Prove that area of a triangle = abc/4R.
+<div id="tablebhas">
+<img src="solngeo1.jpg" alt="triangle" width="250" height="250">
+</div>
+<ul>
+<li>Area of Triangle ABC
+= 1/2 * a * p, where a is the length of BC, the side opposite angle A.</li>
+<li>Since ACD and M'MP are similar,
+AC/M'M = AD/M'P
+b/2R = p/c.</li>
+<li>Therefore p=bc/2R.<br/>
+Hence area =1/2 * a * p 
+= (1/2) * a * (bc /2R) = abc/4R.</li>
+</ul>
+</li>
+
+<li>Derive the formula&nbsp;&nbsp;(a / sin A) = (b / sin B) = (c / sin C) = 2R
+<br/>
+<div id="tablebhas">
+<img src="solngeo2.jpg" alt="triangle" width="250" height="250">
+</div>
+<br/>
+<ul>
+<li>sin B = p / c ; sin C = p / b</li>
+<li>Hence we get, p = c sin B = b sin C</li>
+<li>Similarly, using the other altitudes of the triangle, we get a sinC = c sinA and b sinA=a sinB.</li>
+<li>Hence,<br/>
+a/sinA = b/sinB = c/sinC.        ----------(I)</li>
+<li>From the right triangle M'MP we have,<br/>
+M'P/M'M = sin(M'MP).              ----------(II)</li>
+<li>Since ACD and M'MP are similar,
+angle(M'MP) = C.</li>
+<li>Therefore M'P = AB = c.</li>
+<li>Hence from I & II, we get
+a/sinA = b/sinB = c/sinC = 2R.</li>
+ </ul>
+</li>
+
+<li>Express a<sub>1</sub>a<sub>3</sub>+a<sub>2</sub>a<sub>4</sub> in terms of the diagonals of a cyclic quadrilateral, where a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub> are the sides of the cyclic quadrilateral.
+<br/>
+The diagonals of a cyclic quadrilateral can be written in terms of the sides as,
+<br/>
+&nbsp;&nbsp;(d<sub>13</sub>)<sup>2</sup> = (a<sub>1</sub>a<sub>2</sub>+a<sub>3</sub>a<sub>4</sub> )(a<sub>1</sub>a<sub>3</sub>+a<sub>2</sub>a<sub>4</sub> )/(a<sub>1</sub>a<sub>4</sub>+a<sub>2</sub>a<sub>3</sub>) -------(I)
+<br/>
+&nbsp;&nbsp;(d<sub>24</sub>)<sup>2</sup> = (a<sub>1</sub>a<sub>3</sub>+a<sub>2</sub>a<sub>4</sub>)(a<sub>1</sub>a<sub>4</sub>+a<sub>2</sub>a<sub>3</sub>)/(a<sub>1</sub>a<sub>2</sub>+a<sub>3</sub>a<sub>4</sub>) -------(II)
+<br/>
+Multiplying I & II, we get
+(d<sub>13</sub>)<sup>2</sup>*(d<sub>24</sub>)<sup>2</sup> = (a<sub>1</sub>a<sub>3</sub>+a<sub>2</sub>a<sub>4</sub>)<sup>2</sup><br/>
+Therefore a<sub>1</sub>a<sub>3</sub>+a<sub>2</sub>a<sub>4</sub> = d<sub>13</sub>.d<sub>24</sub>. ----------(III)<br/>
+Statement III is known as Ptolemy's theorem.
+</li>
+</ol>
+<br/>
+<br/>
+<br/>
+
+</div>
+	
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

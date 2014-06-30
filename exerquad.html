@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+<script type="text/javascript">
+function validateForm()
+{
+xvalcalc();
+agecalc();
+losscalc();
+swancalc();
+}
+
+function xvalcalc()
+{
+	var x=document.forms["myform"]["xval1"].value;
+	var y=document.forms["myform"]["xval2"].value;
+	if (x!="" && y=="" || y!="" && x=="")
+ 	{
+  		alert("Both the values should be filled for the first question");
+  		document.getElementById("result1").innerHTML="&nbsp;&nbsp;BOTH THE VALUES SHOULD BE FILLED";
+	}
+	else 
+  	{
+    		if(x==null || x=="" && y==null || y=="")
+			document.getElementById("result1").innerHTML="&nbsp;&nbsp;NOT ATTENDED";
+    		else if(x==2 && y==4 || x==4 && y==2)
+			document.getElementById("result1").innerHTML="&nbsp;&nbsp;RIGHT ANSWER";
+    	else
+		document.getElementById("result1").innerHTML="&nbsp;&nbsp;WRONG ANSWER";	
+  	}
+}
+
+function agecalc()
+{
+	var z=document.forms["myform"]["age"].value;
+	if(z==null || z=="")
+		document.getElementById("result2").innerHTML="&nbsp;&nbsp;NOT ATTENDED";	
+	else
+	{
+		if(z==9)
+			 document.getElementById("result2").innerHTML="&nbsp;&nbsp;RIGHT ANSWER";
+		else
+			 document.getElementById("result2").innerHTML="&nbsp;&nbsp;WRONG ANSWER";
+	}
+}
+
+function losscalc()
+{
+	var l=document.forms["myform"]["lossperc"].value;
+	if(l==null || l=="")
+		document.getElementById("result3").innerHTML="&nbsp;&nbsp;NOT ATTENDED";	
+
+	else
+	{
+		if(l==20)
+			document.getElementById("result3").innerHTML="&nbsp;&nbsp;RIGHT ANSWER";
+		else	
+			document.getElementById("result3").innerHTML="&nbsp;&nbsp;WRONG ANSWER";
+	}
+}		
+
+function swancalc()
+{
+	var s=document.forms["myform"]["swan"].value;
+	if(s==null || s=="")
+		document.getElementById("result4").innerHTML="&nbsp;&nbsp;NOT ATTENDED";	
+	else
+	{
+		if(s==16)
+			document.getElementById("result4").innerHTML="&nbsp;&nbsp;RIGHT ANSWER";
+		else
+			document.getElementById("result4").innerHTML="&nbsp;&nbsp;WRONG ANSWER";
+	}
+}
+</script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Quadratic Equation</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="algebra.html">Algebra</a>
+<li><a href="quad.html" >Introduction</a></li>
+<li><a href="genquadeqn.html" >General Case</a></li>
+<li><a href="splcasequad.html">Special Cases</a></li>
+<li><a href="exerquad.html">Exercises</a></li>
+<li><a href="solnquad.html">Solutions</a></li>
+
+
+
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+<p>
+Some exercises in quadratic equations</p>
+
+Solve this simple quadratic equation <br/>
+<form name="myform">
+<ul>
+<li>2x<sup>2</sup> - 12x  + 16 = 0<br/>
+The values x can take are<br/>
+x  =<input type="text" name="xval1"/>   and      x  =<input type="text" name="xval2"/></li><br/>
+
+<li>The sum of the ages of 2 sisters, Sunita and Sujata,  is 18 and the product of their ages is 81. Prove that they are twins.
+And their age is <input type="text" name="age"/> years.</li>
+
+Check your proof in the 'Solutions' page.<br/>
+<br/>
+<li>Amita sells  a gramaphone to Bharat at a certain loss percentage. Bharat sells it to Chandni at the same loss %. Chandni sells the gramaphone to Amita at the original price, thus gaining 56%. At what loss percentage did Amita sell?
+Loss % is<input type="text" name="lossperc"/> %</li><br/>   
+
+<center><img src="swan.gif" /></center>
+
+<br>    
+<li>The above verse is from Bhaskara's Lilavati. The problem stated in the     verse is as follows :- There are several swans in a lake. 7/2 times the square  root of the total is on the shore, while the remaining two are involved in a playful fight in the lake. What is the total number of swans ?
+Total number of swans = <input type="text" name="swan"/></li><br/>      
+<li>There are two numbers, x and y. The sum of their squares is 2 . 9 times their product. Find the ratio of the two numbers.</li>
+</ul>
+</form>
+&nbsp; &nbsp;&nbsp; &nbsp;<input type="button" value="Submit" onclick="validateForm()"></button> 
+<ol>
+<li><p id="result1"></p></li>
+<li><p id="result2"></p></li>
+<li><p id="result3"></p></li>
+<li><p id="result4"></p></li>
+<p><font face="Comic Sans MS" size="4" color="#004000">Click<a href="solnquad.html">
+here</a> to view the answers</font></p>
+</div>
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&copy;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

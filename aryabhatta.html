@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Indeterminate Equation</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="indeqn.html" >Introduction </a></li>
+<li><a href="chinesethm.html" >Theorem</a></li>
+<li><a href="aryabhatta.html">Aryabhatta's Method</a></li>
+<li><a href="bhaskara.html">Bhaskara's Method</a></li>
+<li><a href="vargapraktri.html">Vargaprakrti</a></li>
+
+
+
+
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+<p><b><u>Aryabhatta's  Kuttaka method :</u></b>
+<br/>
+<br/>
+The word 'kuttaka' means pulveriser(which means  reducer). This method was developed by Aryabhatta in the 5th century to solve indeterminate equations of the form ax - by = c.</p>
+
+<p><b><u>Meaning of the equation :</u></b>
+<br/>
+<br/>
+It is required to determine an integer N which when divided by 'a'  leaves a remainder r1 and when divided by 'b' leaves a remainder r2. (the premise for the chinese remainder theorem !)
+
+From this we get :  
+N = xa + r1
+N = yb + r2. 
+By equating the first equation with the second we get xa + r1 = yb + r2 or ax - by = c for c = r2 - r1.</p>
+
+<p><b><u>The method :</u></b><br/>
+<br/>
+Aryabhata noted that any factor common to a and b should be a factor of c (This is what the chinese remainder theorem states ! Amazing how people can think the same way !), otherwise the equation has no solution. Dividing a, b and c by the greatest common factor of (a,b) we can reduce the equation to the form where a and b  have no common factor except for 1.
+<br/>
+<br/>
+Consider the example :<br/> 
+<b>137x + 10 = 60y</b><br/>
+Express the larger of the coefficients(in this case 137 > 60, so choose 137) as product of<br/>
+the smaller coefficient( i.e 60). Continue doing this, now taking 60 as the larger coefficient and so on. Hence, we get Table 1.</p>
+<div id="tablebhas">
+<table border="2" width="40%">
+<tr>
+<td>
+137=60*2+17<br/>
+60=17*3+9<br/>
+17=9*1+8<br/>
+9=8*1+1<br/>
+</td>
+<td>
+2 &nbsp; &nbsp; &nbsp; &nbsp;<br/>
+3<br/>
+1<br/>
+1<br/>	
+</td>
+<td>
+17 &nbsp; &nbsp; &nbsp; &nbsp;<br/>
+9<br/>
+8<br/>
+(LBR)<br/>
+1<br/> 
+(LR)<br/>
+</td>
+</tr>
+<tr>
+<td>Table 1</td>
+<td>Q</td>
+<td>R</td>
+</table>
+</div>
+<p>From this we can form the column of quotients (Column Q of Table 1) and the column of remainders (Column R of Table 1). <br/>
+The number of quotients (except the first one of column Q) is odd. <br/>
+Now, we have to find a number called the multiplier (call it z) such that <br/>
+z * LR - 10 =  LBR * m<br/>
+Here, 10 is the constant in the equation to be solved (137x+10=60y) and m is any integer.<br/>
+Thus, we get, z * 1 - 10 = 8 * m.<br/>
+We have 18 * 1 - 10 = 8 * 1 . The 1 on the right hand side is the quotient. <br/>
+Thus, we have z = 18 and m = 1 for the equation 137x + 10 = 60y.<br/>
+<br/>
+In the above case, 10 is subtracted because the number of quotients is odd.<br/>
+<br/>
+If the number quotients is even, the constant of the equation has to be added.<br/>
+</br>
+Now, a table has to be formed and the solution can be read off from it.<br/>
+</br>
+How do we form the table ? Click <a href="aryabhattatableformsteps.html">here</a> to find out.</p>
+<br/>
+<br/>
+<br/>
+
+</div>
+	
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&copy;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

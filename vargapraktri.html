@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Indeterminate Equations</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="indeqn.html" >Introduction </a></li>
+<li><a href="chinesethm.html" >Theorem</a></li>
+<li><a href="aryabhatta.html">Aryabhatta's Method</a></li>
+<li><a href="bhaskara.html">Bhaskara's Method</a></li>
+<li><a href="vargapraktri.html">Vargaprakrti</a></li>
+
+
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+What is the solution for the equation  X2 - 17Y2 = 1?
+
+This is an indeterminate equation. A trivial solution for this equation is X=1,Y=0.In fact, there exists infinite number of such integral solutions for this equation.Finding such solutions had always been a challenge for the modern mathematicians. The Indian Mathematicians of the yore have given algorithms to solve this equation .
+<br/><br/>
+Consider the equation,
+<br/><br/>
+    X<sup>2</sup> - DY<sup>2</sup>   =  k where D and k are constants.
+<br/>
+The above equation was called as Vargaprakrti by our ancient  Mathematicians. Brahmagupta(born 628A.D) showed that if a Vargaprakrti with k = 1(or-1,2,-2,4,-4) had one integral solution ,then it had  infinite number of integral  solutions.
+<br/><br/>
+In his book Brahmasphuta Siddhanta, he has given the Bhavana principle as follows :
+<br/><br/>
+If the two Vargaprakritis
+<br/><br/>
+(1) X<sub>1</sub><sup>2</sup> - DY<sub>1</sub><sup>2</sup> = k<sub>1</sub> and
+<br/><br/>
+(2) X<sub>2</sub><sup>2</sup> - DY<sub>2</sub><sup>2</sup> = k<sub>2</sub>, had a solution each,
+<br/><br/>
+then there exists a solution for the Vargaprakrti
+<br/><br/>
+(3) X<sub>3</sub><sup>2</sup> - DY<sub>3</sub><sup>2</sup> = k<sub>1</sub>k<sub>2</sub>.
+<br/><br/>
+The Bhavana was proved by multiplying equations (1) and (2).
+<br/><br/>
+    X<sub>3</sub>= (X<sub>1</sub>X<sub>2</sub>+DY<sub>1</sub>Y<sub>2</sub> ,  X<sub>1</sub>Y<sub>2</sub>+X<sub>2</sub>Y<sub>2</sub>) and
+<br/><br/>
+    X<sub>3</sub>= (X<sub>1</sub>X<sub>2</sub>-DY<sub>1</sub>Y<sub>2</sub> , X<sub>1</sub>Y<sub>2</sub>-X<sub>2</sub>Y<sub>2</sub>) are two solutions of (3).
+<br/><br/>
+The solution (X<sub>1</sub>X<sub>2</sub>+DY<sub>1</sub>Y<sub>2</sub> ,  X<sub>1</sub>Y<sub>2</sub>+X<sub>2</sub>Y<sub>2</sub>) is called Samara Bhavana and the solution (X<sub>1</sub>X<sub>2</sub>-DY<sub>1</sub>Y<sub>2</sub> , X<sub>1</sub>Y<sub>2</sub>-X<sub>2</sub>Y<sub>2</sub>) is called Visesha Bhavana. As a special case, if k<sub>1</sub>=k<sub>2</sub>=1, (1), (2)and (3) represent the same equation, X<sup>2</sup> - DY<sup>2</sup> = 1. Now,the Samara Bhavana is (X<sup>2</sup>+DY<sup>2</sup>, 2XY) and the Visesha Bhavana is (X<sup>2</sup> - DY<sup>2</sup>,0).
+<br/><br/>
+For example,consider the Vargaprakrti X<sup>2</sup> - 8Y<sup>2</sup> = 1.Given (3,1) is a solution for this equation ,we get the Samara Bhavana as (32 + 8 x 12, 2 x 3 x 1) i.e (17,6).This is yet another solution to the given equation.The Visesha Bhavana is (32 - 8 x 12, 0) i.e (1,0).This is also a solution but is a trivial solution. Hence, given one non-trivial solution for the above equation,we can get yet another non-trivial solution. How interesting!
+<br/><br/>
+There is something more in store for you! Indian Mathematicians have developed a technique called  Chakravala to generate as many solutions as possible from a given solution.That is, if we know one solution (which may be trivial also!) for X<sup>2</sup> - DY<sup>2</sup> = 1, then we can generate infinite number of solutions.</p>
+<br/><br/>
+<br/>
+
+</div>
+	
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&copy;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

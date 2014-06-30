@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Indeterminate Equation</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="indeqn.html" >Introduction </a></li>
+<li><a href="chinesethm.html" >Theorem</a></li>
+<li><a href="aryabhatta.html">Aryabhatta's Method</a></li>
+<li><a href="bhaskara.html">Bhaskara's Method</a></li>
+<li><a href="vargaprakrti.html">Vargaprakrti</a></li>
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+Steps for formation of the table in Aryabhatta's method :
+<br/>
+<br/>
+<div id="tablebhas">
+<table border="2" width="40%">
+<tr>
+<td>
+137 = 60 * 2 + 17<br/>
+60  = 17 * 3 + 9<br/>
+17  = 9 *1 + 8<br/>
+9   = 8 * 1 + 1<br/>
+</td>
+<td>
+2 &nbsp; &nbsp; &nbsp; &nbsp;  <br/>
+3<br/>
+1<br/>
+1<br/>
+</td>
+</tr>
+<tr>
+<td>Table 1
+</td>
+<td> Q
+</td>
+</tr>
+</table>
+</div>
+<br/>
+<p>
+The number of rows in the table is the number of quotients (number of rows of Column Q of Table 1), plus 2.
+<br/>
+<br/>
+1) Column 1 of Rows 6,5,4,3 will contain the column Q of the above table.<br/>
+2) Column 1 of Row 2 will contain the multiplier (=18) and that of Row 1 will contain the quotient (=1).<br/>
+3) Now, start from the bottom. (R1,C2) = 1,(R2, C2) = 18<br/>
+4) (R3,C2) = (R2,C2) * (R3,C1) + (R1,C2) <br/>
+   &nbsp; &nbsp;    (R3,C2) = 18 * 1 + 1 = 19.<br/>
+5) (R4,C2) = (R3,C2) * (R4,C1) + (R2,C2)<br/>
+   &nbsp; &nbsp;    (R4,C2) = 19 * 1 + 18 = 37<br/>
+6) (R5,C2) = (R4,C2) * (R5,C1) + (R3,C2)<br/>
+   &nbsp; &nbsp;    (R5,C2) = 37 * 3 + 37 = 130<br/>
+7) (R6,C2) = (R5,C2) * (R6,C1) + (R4,C2)<br/>
+   &nbsp; &nbsp;    (R6,C2) = 130 * 2 + 37 = 297<br/>
+<br/>
+Therefore, <b>x = 130</b> and <b>y = 297</b>.
+<br/>
+In general, the contents of (Rn,C2) i.e. Row n,Column 2 (except the last 2 rows) will be (Rn-1,C2) * (Rn, C1) + (Rn-2, C2).
+
+
+</p>
+<br/>
+<br/>
+<br/>
+
+</div>
+	
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&copy;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

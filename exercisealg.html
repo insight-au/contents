@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Description" content="collin grasley - http://www.modetwentythree.com"/>
+<meta name="Keywords" content="key, words"/>	
+<meta name="Distribution" content="Global"/>
+<meta name="Robots" content="index,follow"/>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+<script>
+function myFunction(t1,t2,t3,t4)
+{
+var score=0;
+if (t1 == 2)
+	score=score+1;
+if (t2 == 2)
+	score=score+1;
+
+if (t3 == 36)
+	score=score+1
+ 
+if (t4 == 60)
+	score=score+1;
+
+
+if (score == 0)
+ alert("Your score: 0");
+else if (score == 1)  
+  alert("Your score: 1");
+else if (score == 2)  
+  alert("Your score: 2");
+else if (score == 3) 
+  alert("Your score: 3");
+else if (score == 4) 
+  alert("Your score: 4");
+}
+</script>
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">EXERCISES</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Dharshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="simulequ.html" >Introduction</a></li>
+<li><a href="indianwayalg.html" >Indian Way</a></li>
+<li><a href="splcasealg.html">Special Cases</a></li>
+<li><a href="exercisealg.html">Exercises</a></li>
+<li><a href="solution.html">Solutions</a></li>
+
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+<form>
+<p>
+<u>Try out these exercises in simultaneous equations :</u>
+<br/>
+<br/>
+<div id="seqeqn1">
+<ol>
+<li>This is a simple & straightforward problem - a direct application of the method, just to stress upon its simplicity & elegance
+<br/>
+<b>7x - 3y=8<br/>
+5x + 9y=28</b><br/>
+<br/>
+<form name="input" action="" method="get">
+x=<input TYPE="text" VALUE="0" SIZE="20" NAME="t1">
+
+y=<input TYPE="text" VALUE="0" SIZE="20" NAME="t2">
+<br/>
+<br/>
+<li>A father has 5 sons. The sum of the ages of the 5 sons equals the age of the father. In 12 years time the sum of the ages of the sons will be double that of their father. What is the father's age now?
+<br/>
+<br/>
+<form name="input" action="" method="get">
+Father's Age=<input TYPE="text" VALUE="0" SIZE="20" NAME="t3"></li>
+<br/>
+<br/>
+<li>Our examination is for a total of N marks, out which one portion is for a project and the rest is for an assignment. I scored 70% on the project and 60% on the assignment, while my friend's scores were just the opposite. Our total individual scores were 40 and 38 respectively. For how many marks was the examination?
+<br/>
+<br/>
+The examination was for <input TYPE="text" VALUE="0" SIZE="20" NAME="t4"></li>
+<br/>
+<br/>
+<li>Consider the equations<br/>
+<b>124x + 32y = 214<br/>
+31x + 8y = 69</b><br/>
+What is special about these equations ?
+<br/>
+<br/>
+<button onclick="myFunction(t1.value,t2.value,t3.value,t4.value)">Click here to find your score</button>
+</form>
+<br/>
+
+<p><font face="Comic Sans MS" size="4" color="#004000">Click<a href="solution.html">
+here</a> to view the answers</font></p>
+</div>
+</ol>
+</div>
+</p>
+</div>
+<br/>
+<br/>
+<div id="footer1">
+	<footer>
+	   InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

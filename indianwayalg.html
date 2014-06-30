@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Description" content="collin grasley - http://www.modetwentythree.com"/>
+<meta name="Keywords" content="key, words"/>	
+<meta name="Distribution" content="Global"/>
+<meta name="Robots" content="index,follow"/>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Indian Way</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Dharshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="simulequ.html" >Introduction</a></li>
+<li><a href="indianwayalg.html" >Indian Way</a></li>
+<li><a href="splcasealg.html">Special Cases</a></li>
+<li><a href="exercisealg.html">Exercises</a></li>
+<li><a href="solution.html">Solutions</a></li>
+
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+<p>
+But what has Indian maths got to do with it ?
+</p>
+
+
+<p>
+Indians have found a way to solve these equations. The Vedic method offers a much simpler route to the solution, than the normal method that we are accustomed to.
+</p>
+
+<div id="seqeqn">
+<p>
+
+<table border="0"  width="700">
+<tr>
+<td><b><u>Normal Method:</u></b><br/>2x+3y=8-->eqn A<br/>4x+5y=14-->eqn B<br/><b>Step 1:</b><br/> 2 * eqn A gives<br/> 4x+6y=16-->eqn C<br/><b>Step 2:</b><br/>eqn C-eqn B gives<br/> y=2<br/><b>Step 3:</b><br/>Substitute back in eqn A gives<br/>2x+6=8<br/>x=1 </td>
+<td><b><u>Vedic Method:</u></b><br/>2x+3y=8-->eqn A<br/>4x+5y=14-->eqn B<br/><b>Step 1:</b><br>Numerator for value of x<br/>(3*14)-(5*8)=42-40=2<br/>Denominator=(3*4)-(2*5)=12-10=2<br/>x=2/2=1<br/><b>Step 2:</b><br/>Numerator for value of y<br/>=(4*8)-(2*14)=32-28=4<br/>Denominator is same as for x=2<br/>y=4/2=2</td>
+</tr>
+</table>
+</div>
+</p>
+<p>The Vedic method is identical to the Cramer's rule for solving simultaneous equations, using determinants. If you're wondering what these determinants are, you'll have to be patient till you come across them in higher classes. If you really can't bear not to know what they are,then go ahead and do some research !!!
+</p>
+<p><b><u>General method :</u></b><ul>
+
+<li>Consider the 2 equations</li>
+<div id="seqeqn1">
+a x + b y = c<br/>
+d x + e y = f
+</div>
+<li>Find the numerator for x as Nx = (b * f) - (e * c)</li>
+<li>Find the numerator for y as Ny = (d * c) - (a * f)</li>
+<li>Find the denominator for both x & y as Dxy = (d * b) - (a * e)</li>
+<li>x = Nx / Dxy  and  y = Ny / Dxy</li>
+</ul>
+<p>
+<b>More Examples</b>
+<br/>
+<ul>
+<b><li>3x + 2y = 29
+2x - y = 3</b>
+<br/>
+<br/>
+<b>Numerator for x </b>= (2 * 3) - ((-1) * 29) = 6 + 29 =<b> 35</b><br/>
+<b>Numerator for y</b> = (2 * 29) - (3 * 3) = 58 - 9 =<b> 49</b><br/>
+<b>Denominator for both x & y</b> =  (2 * 2) - (3 * (- 1)) = 4 + 3 =<b> 7</b></li><br/>
+<br/>
+<li><b>x = 35 / 7 = 5</b><br/>
+<b>y = 49 / 7 = 7</b><br/>
+<br/>
+<b>10x - 15y = 35<br/>
+2x - 3y = 7</b><br/>
+<br/>
+<b>Nx</b> = ( (- 15) * 7) - ((-3) * 35) = (- 105 + 105) =<b> 0</b><br/>
+<b>Ny</b> = ( 2 * 35) - (10 * 7) = 70 - 70 =<b> 0</b><br/>
+<b>Dxy</b> = (2 * (-15)) - (10 * (- 3)) = - 30 + 30 =<b> 0</b><br/>
+<br/>
+Here, Nx = Ny = Dxy = 0
+When this happens, there are <b>infinite solutions</b> to the equations.
+<br/>
+In the above equation, note that (a / d) = (b / e) = (c / f) 
+i.e. (10 / 2) = ( - 15 / -3) = (35 / 7) = 5.</li>
+</div>
+<br/>
+<br/>
+<div id="footer1">
+	<footer>
+	   InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>

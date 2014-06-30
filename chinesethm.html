@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Indian Mathematics</title>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+<script type="text/javascript" src="csshorizontalmenu.js"></script>
+</head>
+
+
+<style type="text/css">
+#intro_text {
+				color:#CC0000;
+				text-align:justify;
+				line-height:26px;
+				opacity:0;
+				padding-left:60px;
+				padding-right:60px;
+			}
+#insight { 
+			font-weight:800;
+			font-variant:small-caps;
+		}
+p {
+	margin-top:35px;
+	}
+#footer {
+			margin-top:90px;
+		}
+#footer a{
+			color:#666666;
+			text-shadow:#000000;
+			font-style:italic;
+			text-decoration:none;
+			font-weight:600;
+			margin-right:50px;
+			font-size:18px;
+		}
+</style>
+
+</head>
+<body>
+<h2 align="center">Indeterminate Equations</h2>
+<br/>
+
+
+<div class="horizontalcssmenu">
+<ul id="cssmenu1">
+<li style="border-left: 0px solid #202020;"><a href="main.html">Darshan</a></li>
+<li><a href="algebra.html">Algebra</a></li>
+<li><a href="indeqn.html" >Introduction </a></li>
+<li><a href="chinesethm.html" >Theorem</a></li>
+<li><a href="aryabhatta.html">Aryabhatta's Method</a></li>
+<li><a href="bhaskara.html">Bhaskara's Method</a></li>
+<li><a href="vargapraktri.html">Vargaprakrti</a></li>
+
+
+    <!--<ul>
+    <li><a href="http://www.dynamicdrive.com">Dynamic HTML</a></li>
+    <li><a href="http://www.codingforums.com">Coding Forums</a></li>
+    <li><a href="http://www.cssdrive.com">CSS Drive</a></li>
+    <li><a href="http://www.dynamicdrive.com/style/">CSS Library</a></li>
+    </ul>-->
+</li>
+</ul>
+
+<br style="clear: left;" />
+</div>
+
+<br/>
+<div id="cenmath">
+<b>The Chinese Remainder Theorem</b>
+
+<p>You must be wondering where the Chinese Remainder Theorem comes into the picture, when we're discussing Indian maths. Well, it is similar to the indeterminate equations that Indian mathematicians like Aryabhatta and Bhaskara attempted to solve.</p>
+
+<p>Suppose you have a number N. And you have a set of integers (a1, a2, a3,....., an).  N, when divided by each of these integers leaves a remainder. The idea is to find N, using this relationship.</p>
+
+<p>Confused ? Maybe, this example will clear things up.</p>
+
+            
+         
+         
+      	<p>You have X marbles. When you put them in groups of 8, you have 4 left and when you put them in groups of 6, you have 2  left. So, the idea is to find X, which is the total number of marbles you have.
+Since, X, when divided by 8 leaves a remainder of 4, we can say that (X - 4) is divisible by 8.
+Similarly, (X - 2) is divisible by 6.</p>
+
+<p>So, what does the theorem state ?<br/>
+
+&nbsp;&nbsp;The theorem states that a solution to the problem exists only when the difference between the remainders is divisible by the GCD of the divisors.</p>
+
+<p>So, for the example stated above, (4 - 2) is divisible by GCD of 8 & 6 i.e. (4 -2) =2 is divisible by 2. So, a solution exists for the example we have stated above.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;X = 6t + 2          --- eqn A
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;X = 8s + 4         --- eqn B
+<br/>
+where t & s are integers.</p>
+
+<p>From A & B, we get 
+    6t + 2 = 8s + 4 
+    6t + 2 - 4 = 8s
+    6t - 2 = 8s.
+<br/>
+This means that 6t -2 is divisible by 8.   Intuitively, we know that the minimum value of t for which this is true is t = 3. This can be proved, using Modulo arithmetic. For now, this intuitive understanding will suffice.<br/>
+
+<p>Substituting this value for X, we have X = 6 * 3 + 2 = 20.  So, the total number of marbles you had was 20. Neat, huh? </p>
+
+<p>The most important result of the Chinese remainder theorem is Modulo arithmetic. So, what is modulo arithmetic all about ? Take a peek at it here.</p>
+
+
+<br/>
+<br/>
+<br/>
+
+</div>
+	
+<div>
+	 <footer>
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&copy;InSIGHT,DCSE & DIST @AUC
+       </footer>
+</div>
+</body>
+</html>
