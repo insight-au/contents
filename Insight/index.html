@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>InSIGHT</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Description" content="collin grasley - http://www.modetwentythree.com"/>
+<meta name="Keywords" content="key, words"/>	
+<meta name="Distribution" content="Global"/>
+<meta name="Robots" content="index,follow"/>
+<link rel="stylesheet" type="text/css" href="inc/style.css" media="all" />
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("img.a").hover(
+function() {
+$(this).stop().animate({"opacity": "0"}, "slow");
+},
+function() {
+$(this).stop().animate({"opacity": "1"}, "slow");
+}
+);
+});
+</script>
+
+<style type="text/css">
+#logo { 
+		margin-top:70px;
+		padding-left: 50px; 
+	  }
+img.a {
+		position:absolute;
+		z-index:10;
+	  }
+img.b {
+		position:absolute;
+	  }
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+<a href="welcome.html"><img src="images/logo/logo_witht.jpg" height="532" width="800" class="b"/>
+<img src="images/logo/logo_withoutt_click.jpg" height="532" width="800" class="a"/></a>
+</div>
+</div>
+</body>
+</html>
